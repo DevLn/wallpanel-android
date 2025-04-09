@@ -19,4 +19,5 @@
     <issue id="UnusedResources">
         <ignore path="src/main/res/drawable-xxxhdpi/homedash_logo.png" />
     </issue>
+    <issue id="UseAppTint" severity="ignore" />
 </lint>
