@@ -31,6 +31,7 @@ def versionMinor = 12
 def versionPatch = 0
 def versionBuild = 0 // bump for dog food builds, public betas, etc.
 
+/*
 def CODE() {
     Properties properties = new Properties()
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
@@ -60,6 +61,7 @@ def BROKER_USERNAME() {
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
     return properties.getProperty("brokerUsername")
 }
+*/
 
 android {
     kapt {
@@ -105,11 +107,13 @@ android {
             buildConfigField "String", BASE_ENVIRONMENT, '"DEV_ENVIRONMENT"'
             applicationId "xyz.wallpanel.app"
             versionName "${versionMajor}.${versionMinor}.${versionPatch} Build ${versionBuild}-DEV"
+            /*
             buildConfigField 'Integer', 'CODE', CODE()
             buildConfigField 'String', 'HASS_URL', "\"" + HASS_URL() +"\""
             buildConfigField 'String', 'BROKER', "\"" + BROKER() +"\""
             buildConfigField 'String', 'BROKER_PASS', "\"" + BROKER_PASS() +"\""
             buildConfigField 'String', 'BROKER_USERNAME', "\"" + BROKER_USERNAME() +"\""
+            */
         }
         qa {
             dimension "default"
