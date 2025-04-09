@@ -16,7 +16,7 @@
 
 plugins {
     id 'com.android.application'
-    id 'com.github.sgtsilvio.gradle.android-retrofix'
+    //id 'com.github.sgtsilvio.gradle.android-retrofix'
     id 'kotlin-android'
     id 'kotlin-parcelize'
     id 'kotlin-kapt' // Allows for Kotlin annotation processors
