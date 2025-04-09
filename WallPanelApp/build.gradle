@@ -114,13 +114,20 @@ android {
             buildConfigField 'String', 'BROKER_PASS', "\"" + BROKER_PASS() +"\""
             buildConfigField 'String', 'BROKER_USERNAME', "\"" + BROKER_USERNAME() +"\""
             */
+            buildConfigField 'Integer', 'CODE', '1234'
+            buildConfigField 'String', 'HASS_URL', '""'
+            buildConfigField 'String', 'BROKER', '""'
+            buildConfigField 'String', 'BROKER_USERNAME', '""'
+            buildConfigField 'String', 'BROKER_PASS', '""'
         }
+        /*
         qa {
             dimension "default"
             buildConfigField "String", BASE_ENVIRONMENT, '"QA_ENVIRONMENT"'
             applicationId "xyz.wallpanel.app"
             versionName "${versionMajor}.${versionMinor}.${versionPatch} Build ${versionBuild}-QA"
         }
+        */
         prod {
             dimension "default"
             buildConfigField "String", BASE_ENVIRONMENT, '"PROD_ENVIRONMENT"'
